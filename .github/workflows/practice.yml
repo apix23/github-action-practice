@@ -1,6 +1,5 @@
 name: CI API Pipeline
 on:
-  workflow-dispatch:
   push:
     branches:
       - main
