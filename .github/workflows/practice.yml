@@ -8,10 +8,11 @@ on:
       - main
   repository_dispatch:
     types: [contentful.deploy]
+  workflow_dispatch:  # Add this line
 jobs:
-  slack-job:
+  log-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Send slack message
+      - name: print hello
         run: |
           echo "hello world"
